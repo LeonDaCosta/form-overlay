@@ -10,4 +10,4 @@ body{
 
 .row{}
 
-.col-1{}
+.col-1{width: 970px; margin: 0 auto; }
