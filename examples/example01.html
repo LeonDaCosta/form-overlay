@@ -13,8 +13,11 @@
 		<link rel="stylesheet" href="../css/form-overlay.css">
 		<script src="../js/form-overlay.js"></script>
 		<script>
-			var formOverlay = new FormOverlay();
-
+			var formOverlay = new FormOverlay({
+  				btnId: "btn1",
+  				formContainer: "div1",
+  				postUrl: "https://www.google.co.uk"
+			});
 			console.log(formOverlay.count);
 		</script>
 		

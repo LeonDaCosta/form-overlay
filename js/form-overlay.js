@@ -12,5 +12,13 @@
 
 var FormOverlay = function FormOverlay(){
 	
+	var settings = {
+  		tnId: null,
+  		formContainer: null,
+  		postUrl: null
+}
+	
 	FormOverlay.prototype.count = 4;
+	console.log(arguments.length);
+	console.log(arguments[0]);
 }
