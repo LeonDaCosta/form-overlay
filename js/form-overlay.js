@@ -31,11 +31,6 @@ var FormOverlay = function FormOverlay(){
 	
 	window.onload = function() {
     	document.getElementById(btnId).onclick = function btnClick() {
-        	//alert("Simple JS From Overlay");
-        	//var div = document.createElement("div");
-			//div.innerHTML = "some HTML";
-			 //document.body.innerHTML = '<div class="overlay"></div>';
-			 //document.body.appendChild('<div class="overlay"></div>');
 			 document.body.innerHTML += '<div class="overlay"></div>';
     	}
 	}
