@@ -31,7 +31,15 @@ var FormOverlay = function FormOverlay(){
 	
 	window.onload = function() {
     	document.getElementById(btnId).onclick = function btnClick() {
-			 document.body.innerHTML += '<div class="overlay"></div>';
+			 document.body.innerHTML += '<div id="overlay" class="overlay"></div>';
+			 document.getElementById('overlay').onclick = function btnClick() {
+			document.getElementById('overlay').remove();
     	}
+    	}
+    	
+    	
+    	
+    	
 	}
+	
 }
