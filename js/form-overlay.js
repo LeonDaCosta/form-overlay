@@ -30,16 +30,26 @@ var FormOverlay = function FormOverlay(){
 	console.log(btnId);
 	
 	window.onload = function() {
+		document.body.innerHTML += '<div id="overlay" class="overlay-hide"></div>';
     	document.getElementById(btnId).onclick = function btnClick() {
-			 document.body.innerHTML += '<div id="overlay" class="overlay"></div>';
-			 document.getElementById('overlay').onclick = function btnClick() {
-			document.getElementById('overlay').remove();
-    	}
+			 addBackground();
     	}
     	
+    	document.getElementById('overlay').onclick = function btnClick() {
+			 removeBackground();
+    	}
     	
+    	function removeBackground(){
+    		console.log("removed");
+    		document.getElementById('overlay').className = "";
+    	}
     	
-    	
+    	function addBackground(){
+    		document.getElementById('overlay').className = "";
+    		console.log("added");
+    		document.getElementById('overlay').className += 'overlay';
+    	}
+
 	}
 	
 }

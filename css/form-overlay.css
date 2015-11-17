@@ -7,3 +7,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   /*dim the background*/
   z-index: 8999; }
+  
+  .overlay-hide{
+  	display: none;
+  }
