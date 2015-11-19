@@ -19,15 +19,19 @@ var FormOverlay = function FormOverlay(){
 	
 	FormOverlay.prototype.count = 4;
 	
-	console.log(arguments.length);
-	console.log(arguments[0]);
+	console.log("Length: " + arguments.length);
+	console.log("arguments 0: " + arguments[0]);
+	
 	var json = arguments[0];
-	console.log(json.btnId);
-	
 	var btnId = json.btnId;
-	var btn = document.getElementById(btnId);
+	var formDiv = json.formContainer;
 	
-	console.log(btnId);
+	console.log("formContainer: " + formDiv);
+	console.log("btnId: " + btnId);
+	
+	var btn = document.getElementById(btnId);
+	var formc = document.getElementById(formDiv);
+	
 	
 	window.onload = function() {
 		document.body.innerHTML += '<div id="overlay" class="overlay-hide"></div>';
@@ -49,6 +53,9 @@ var FormOverlay = function FormOverlay(){
     		console.log("added");
     		document.getElementById('overlay').className += 'overlay';
     	}
+    	var formc = document.getElementById(formDiv);
+    	//formc.innerHTML = "whatever";
+    	formc.style.display = 'none'
 
 	}
 	
