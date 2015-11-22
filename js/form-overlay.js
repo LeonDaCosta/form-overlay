@@ -30,7 +30,6 @@ var FormOverlay = function FormOverlay(){
 	console.log("btnId: " + btnId);
 	
 	var btn = document.getElementById(btnId);
-	var formc = document.getElementById(formDiv);
 	
 	
 	window.onload = function() {
@@ -52,6 +51,10 @@ var FormOverlay = function FormOverlay(){
     		document.getElementById('overlay').className = "";
     		console.log("added");
     		document.getElementById('overlay').className += 'overlay';
+    	}
+    	
+    	function addForm(){
+    		
     	}
     	var formc = document.getElementById(formDiv);
     	//formc.innerHTML = "whatever";
