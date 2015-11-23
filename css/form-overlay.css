@@ -6,8 +6,28 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   /*dim the background*/
-  z-index: 8999; }
+  z-index: 8999;
+}
   
-  .overlay-hide{
+.overlay-hide{
   	display: none;
-  }
+}
+  
+.overlay_window {
+  position: absolute;
+  width: 450px;
+  min-height: 500px;
+  top: 10%;
+  margin: 0 auto;
+  z-index: 9000;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f7f7f7));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+  display: none;
+  left: 50%;
+  margin-left: -225px;
+}

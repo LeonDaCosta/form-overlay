@@ -51,14 +51,18 @@ var FormOverlay = function FormOverlay(){
     		document.getElementById('overlay').className = "";
     		console.log("added");
     		document.getElementById('overlay').className += 'overlay';
+    		addForm();
     	}
     	
     	function addForm(){
-    		
+    		var formc = document.getElementById(formDiv);
+    		formc.style.display = 'block';
+    		document.getElementById(formDiv).className += "overlay_window";
     	}
+    	
     	var formc = document.getElementById(formDiv);
     	//formc.innerHTML = "whatever";
-    	formc.style.display = 'none'
+    	formc.style.display = 'none';
 
 	}
 	
