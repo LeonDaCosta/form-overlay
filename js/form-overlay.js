@@ -31,7 +31,6 @@ var FormOverlay = function FormOverlay(){
 	
 	var btn = document.getElementById(btnId);
 	
-	
 	window.onload = function() {
 		document.body.innerHTML += '<div id="overlay" class="overlay-hide"></div>';
     	document.getElementById(btnId).onclick = function btnClick() {
@@ -45,6 +44,7 @@ var FormOverlay = function FormOverlay(){
     	function removeBackground(){
     		console.log("removed");
     		document.getElementById('overlay').className = "";
+    		removeForm();
     	}
     	
     	function addBackground(){
@@ -58,6 +58,14 @@ var FormOverlay = function FormOverlay(){
     		var formc = document.getElementById(formDiv);
     		formc.style.display = 'block';
     		document.getElementById(formDiv).className += "overlay_window";
+    	}
+    	
+    	function removeForm(){
+    		var formc = document.getElementById(formDiv);
+    		formc.className = "";
+    		formc.style.display = 'none';
+    		//formc.style.display = 'block';
+    		//document.getElementById(formDiv).className += "overlay_window";
     	}
     	
     	var formc = document.getElementById(formDiv);
