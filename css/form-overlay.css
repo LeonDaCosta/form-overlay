@@ -13,7 +13,7 @@
   	display: none;
 }
   
-.overlay_window {
+.overlay-window {
   position: absolute;
   width: 450px;
   min-height: 500px;
@@ -30,4 +30,8 @@
   display: none;
   left: 50%;
   margin-left: -225px;
+}
+
+.overlay-form-div{
+ padding:10px;	
 }

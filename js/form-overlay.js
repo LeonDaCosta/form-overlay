@@ -57,7 +57,7 @@ var FormOverlay = function FormOverlay(){
     	function addForm(){
     		var formc = document.getElementById(formDiv);
     		formc.style.display = 'block';
-    		document.getElementById(formDiv).className += "overlay_window";
+    		document.getElementById(formDiv).className += "overlay-window overlay-form-div";
     	}
     	
     	function removeForm(){
@@ -65,7 +65,7 @@ var FormOverlay = function FormOverlay(){
     		formc.className = "";
     		formc.style.display = 'none';
     		//formc.style.display = 'block';
-    		//document.getElementById(formDiv).className += "overlay_window";
+    		//document.getElementById(formDiv).className += "overlay-window";
     	}
     	
     	var formc = document.getElementById(formDiv);
