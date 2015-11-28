@@ -19,15 +19,9 @@ var FormOverlay = function FormOverlay(){
 	
 	FormOverlay.prototype.count = 4;
 	
-	console.log("Length: " + arguments.length);
-	console.log("arguments 0: " + arguments[0]);
-	
 	var json = arguments[0];
 	var btnId = json.btnId;
 	var formDiv = json.formContainer;
-	
-	console.log("formContainer: " + formDiv);
-	console.log("btnId: " + btnId);
 	
 	var btn = document.getElementById(btnId);
 	
@@ -41,37 +35,30 @@ var FormOverlay = function FormOverlay(){
 			 removeBackground();
     	}
     	
-    	function removeBackground(){
-    		console.log("removed");
+    	function removeBackground() {
     		document.getElementById('overlay').className = "";
     		removeForm();
     	}
     	
-    	function addBackground(){
+    	function addBackground() {
     		document.getElementById('overlay').className = "";
-    		console.log("added");
     		document.getElementById('overlay').className += 'overlay';
     		addForm();
     	}
     	
-    	function addForm(){
+    	function addForm() {
     		var formc = document.getElementById(formDiv);
     		formc.style.display = 'block';
     		document.getElementById(formDiv).className += "overlay-window overlay-form-div";
     	}
     	
-    	function removeForm(){
+    	function removeForm() {
     		var formc = document.getElementById(formDiv);
     		formc.className = "";
     		formc.style.display = 'none';
-    		//formc.style.display = 'block';
-    		//document.getElementById(formDiv).className += "overlay-window";
     	}
     	
     	var formc = document.getElementById(formDiv);
-    	//formc.innerHTML = "whatever";
     	formc.style.display = 'none';
-
-	}
-	
+	}	
 }
